@@ -10,6 +10,9 @@ void insertion_sort_list(listint_t **list)
 	int a;
 	listint_t *h;
 
+	if (list == NULL)
+		return;
+
 	h = *list;
 	while (h != NULL)
 	{
